@@ -1,1 +1,17 @@
+<div id="game-container"></div>
 
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('game');
+    
+    // List your embed links here
+    const games = {
+        "slope": "https://html5.gamedistribution.com/YOUR-SLOPE-ID/",
+        "1v1lol": "https://1v1.lol"
+    };
+
+    if(games[gameId]) {
+        document.getElementById('game-container').innerHTML = 
+            `<iframe src="${games[gameId]}" width="100%" height="600px" frameborder="0"></iframe>`;
+    }
+</script>
