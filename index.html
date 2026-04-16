@@ -1,5 +1,22 @@
-<iframe src="https://kdata1.com/2020/05/slope/" 
-        width="800" 
-        height="600" 
-        frameborder="0">
-</iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cool Games</title>
+    <style>
+        body { background: #111; color: white; font-family: sans-serif; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .game-card { background: #222; padding: 10px; border-radius: 10px; cursor: pointer; transition: 0.3s; }
+        .game-card:hover { transform: scale(1.05); background: #333; }
+        img { width: 100%; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Popular Games</h1>
+    <div class="grid">
+        <div class="game-card" onclick="window.location.href='play.html?game=slope'">
+            <img src="https://placehold.co/200x150" alt="Slope">
+            <p>Slope</p>
+        </div>
+        </div>
+</body>
+</html>
